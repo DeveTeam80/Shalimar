@@ -1,0 +1,73 @@
+//================================================================================
+// Why Choose Us Section SCSS
+//================================================================================
+
+.why-choose-us-section {
+  &.section-padding {
+    padding: 120px 0;
+  }
+  p {
+    color: var(--p800-clr);
+  }
+}
+
+.why-choose-us-item {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--p200-clr);
+  transition: all 0.4s;
+  background-color: #f9f9f9; // A very light gray background for the card
+
+  .thumb {
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    img {
+      transition: all 0.4s;
+    }
+  }
+
+  .content {
+    padding: 30px 25px;
+    
+    .title {
+      font-size: 24px;
+      font-weight: 700;
+      font-family: "Noto Serif", sans-serif;
+      color: var(--p900-clr); // Your brand's dark green
+      margin-bottom: 15px;
+      display: block;
+    }
+
+    p {
+      font-size: 16px;
+      color: var(--p800-clr); // Readable gray for the description
+      line-height: 1.7;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.08);
+
+    .thumb img {
+      transform: scale(1.05);
+    }
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 1199px) {
+  .why-choose-us-item .content .title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 991px) {
+  .why-choose-us-item .content {
+    padding: 25px 20px;
+  }
+  .why-choose-us-item .content .title {
+    font-size: 20px;
+  }
+}

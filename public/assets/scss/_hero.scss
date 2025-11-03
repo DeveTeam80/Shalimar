@@ -1,0 +1,320 @@
+//================================================================================
+// Hero Section SCSS (Mobile Optimised)
+//================================================================================
+
+.banner-section {
+	&.style-v3 {
+		position: relative;
+		z-index: 1;
+		background-color: #0a3d23;
+		display: flex;
+		align-items: center;
+		min-height: 700px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(to right, rgba(10, 61, 35, 0.95) 20%, transparent 80%);
+			z-index: 1;
+		}
+
+		.container {
+			position: relative;
+			z-index: 2;
+		}
+
+		.hero-threthumb {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 0;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center top; // keeps main subject visible on mobile
+			}
+		}
+
+		.hero-contentv03 {
+			padding-top: 80px;
+			padding-bottom: 80px;
+
+			h1,
+			p,
+			.sun-star {
+				color: #ffffff;
+			}
+
+			h1 {
+				line-height: 1.3;
+				margin-bottom: 24px;
+				font-size: clamp(28px, 5vw, 52px); // responsive heading
+			}
+
+			p {
+				font-size: clamp(14px, 3.5vw, 18px); // smaller on mobile
+				line-height: 1.6;
+				margin-bottom: 30px;
+			}
+
+			.cmn-btn {
+				background: var(--p2-clr);
+				border-radius: 50px;
+				padding: 14px 28px; // slightly smaller for mobile
+				font-size: clamp(14px, 3vw, 16px);
+			}
+		}
+
+		// Responsive adjustments
+		@include breakpoint(max-lg) {
+			min-height: auto;
+			padding: 100px 0 60px;
+
+			.hero-threthumb {
+				display: none; // hide image completely
+			}
+
+			&::before {
+				display: none; // remove gradient too
+			}
+
+			.hero-contentv03 {
+				padding: 80px 20px;
+				text-align: center;
+			}
+
+			.hero-contentv03 {
+				padding: 0;
+				text-align: center;
+
+				.sun-star {
+					justify-content: center;
+					display: flex;
+					margin-bottom: 15px;
+					font-size: 14px;
+				}
+
+				h1 {
+					font-size: clamp(24px, 6vw, 40px);
+				}
+
+				p {
+					font-size: clamp(13px, 4vw, 16px);
+				}
+
+				.cmn-btn {
+					padding: 12px 24px;
+				}
+			}
+		}
+
+		@include breakpoint(max-sm) {
+			.hero-contentv03 {
+				h1 {
+					font-size: 22px;
+				}
+
+				p {
+					font-size: 13px;
+				}
+			}
+		}
+	}
+}
+
+//BreadCrumnd Banner
+.breadcrumnd-banner {
+	background: url(../img/about/breadcrumb.png) no-repeat center center;
+	background-size: cover;
+	position: relative;
+	padding: 150px 0;
+	z-index: 1;
+
+	&::before {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		content: "";
+		background: linear-gradient(to right, rgba(10, 61, 35, 0.95) 20%, transparent 80%);
+
+		z-index: -1;
+	}
+
+	.breadcrumnd-wrapp {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 24px 40px;
+
+		.bread-content {
+			h1 {
+				font-size: 80px;
+				font-weight: 700;
+				color: $white-clr;
+				line-height: 85px;
+				font-family: $heading-font;
+				margin-bottom: 20px;
+				text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+			}
+
+			.bread-listing {
+				display: flex;
+				align-items: center;
+				gap: 18px;
+
+				li,
+				a {
+					color: $white-clr;
+					font-family: $heading-font;
+					font-size: 20px;
+					font-weight: 400;
+					text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+				}
+			}
+		}
+	}
+
+	@include breakpoint(max-xl) {
+		padding: 80px 0;
+	}
+
+	@include breakpoint(max-lg) {
+		padding: 80px 0 90px;
+
+		.breadcrumnd-wrapp {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 24px 24px;
+
+			.bread-content {
+				h1 {
+					font-size: 60px;
+					font-weight: 700;
+					line-height: 65px;
+					margin-bottom: 21px;
+				}
+
+				.bread-listing {
+					gap: 15px;
+
+					li,
+					a {
+						font-size: 18px;
+					}
+				}
+			}
+		}
+
+		.bread-thumb {
+			max-width: 180px;
+
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	@include breakpoint(max-md) {
+		padding: 50px 0 60px;
+
+		.breadcrumnd-wrapp {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 24px 24px;
+
+			.bread-content {
+				h1 {
+					font-size: 48px;
+					margin-bottom: 10px;
+				}
+			}
+		}
+
+		.bread-thumb {
+			max-width: 120px;
+
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	@include breakpoint(max-sm) {
+		.breadcrumnd-wrapp {
+			.bread-content {
+				h1 {
+					font-size: 39px;
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}
+
+// ============================================
+// Header Navigation Visibility Fix
+// ============================================
+
+.header-section {
+	&.style-2 {
+		.main-menu {
+			ul {
+				li {
+					a {
+						color: $white-clr !important;
+						text-shadow:
+							0 1px 3px rgba(0, 0, 0, 0.8),
+							0 2px 6px rgba(0, 0, 0, 0.6),
+							0 4px 12px rgba(0, 0, 0, 0.4);
+						font-weight: 600;
+						transition: all 0.3s ease;
+
+						&:hover {
+							color: $p2-clr !important;
+							text-shadow:
+								0 1px 3px rgba(0, 0, 0, 0.9),
+								0 2px 8px rgba(0, 0, 0, 0.7),
+								0 4px 16px rgba(0, 0, 0, 0.5);
+						}
+					}
+				}
+			}
+		}
+
+		// Logo shadow for better visibility
+		.logo {
+			a {
+				img {
+					filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.6));
+				}
+			}
+		}
+	}
+}
+
+// For transparent header variant if you have one
+.header-section.transparent-header {
+	.main-menu {
+		ul {
+			li {
+				a {
+					color: $white-clr !important;
+					text-shadow:
+						0 1px 3px rgba(0, 0, 0, 0.8),
+						0 2px 6px rgba(0, 0, 0, 0.6);
+					font-weight: 600;
+				}
+			}
+		}
+	}
+}

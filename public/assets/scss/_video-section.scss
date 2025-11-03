@@ -1,0 +1,73 @@
+//================================================================================
+// Video Section SCSS
+//================================================================================
+
+.video-section-shalimar {
+  background-color: #f9f9f9; // Light, clean background
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  .grass-element {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 150px;
+    height: auto;
+  }
+
+  .section-title {
+    h2 {
+      font-size: 48px;
+      color: var(--p900-clr);
+      margin-bottom: 30px;
+    }
+  }
+
+  .video-watch-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    background-color: var(--white-clr);
+    padding: 15px 30px;
+    border-radius: 50px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.07);
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .video-cmn {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--p900-clr);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      i {
+        color: var(--white-clr);
+        font-size: 16px;
+      }
+    }
+
+    h5 {
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--p900-clr);
+      margin: 0;
+    }
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 767px) {
+  .video-section-shalimar .section-title h2 {
+    font-size: 36px;
+  }
+}

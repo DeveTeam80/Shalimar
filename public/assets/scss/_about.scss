@@ -1,0 +1,33 @@
+.about-section {
+  &.style-v01 {
+    .about-thumv03 {
+      .mimg {
+        border-radius: 20px;
+        width: 100%;
+        height: auto;
+      }
+    }
+    .about-contentv1 {
+      // This now targets ALL p tags in the about content section
+      p {
+        line-height: 1.7;
+        color: var(--p800-clr);
+      }
+      .mission-vision {
+        h5 {
+          font-size: 20px;
+          font-weight: 700;
+          color: var(--p900-clr);
+          margin-bottom: 8px;
+        }
+      }
+      .cmn-btn {
+        background: var(--p900-clr);
+        &:hover {
+          background: var(--p2-clr);
+          color: var(--white-clr);
+        }
+      }
+    }
+  }
+}

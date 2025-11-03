@@ -1,0 +1,27 @@
+// Shalimar Farms Color Palette
+:root {
+  --body: #fff;
+  --black-clr: #000;
+  --white-clr: #fff;
+  --p1-clr: #0a3d23;      /* Primary Green */
+  --p2-clr: #e0b93c;;      /* Primary Gold */
+  --p900-clr: #0a3d23;    /* Dark Shade - Green */
+  --p800-clr: #6d756d;      /* Medium Gray for text */
+  --p700-clr: #191919;      /* Dark Gray for headings */
+  --p200-clr: #e9efe5;      /* Light Gray for borders */
+  --p100-clr: #f7f9f6;      /* Off-white for backgrounds */
+  --shadow-clr: box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+// SCSS Variable Mapping
+$body: var(--body);
+$black-clr: var(--black-clr);
+$white-clr: var(--white-clr);
+$p1-clr: var(--p1-clr);
+$p2-clr: var(--p2-clr);
+$p900-clr: var(--p900-clr);
+$p800-clr: var(--p800-clr);
+$p700-clr: var(--p700-clr);
+$p200-clr: var(--p200-clr);
+$p100-clr: var(--p100-clr);
+$shadow-clr: var(--shadow-clr);
