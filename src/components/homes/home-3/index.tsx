@@ -14,6 +14,7 @@ import Faq from './Faq';
 import TestimonialHomeThree from './TestimonialHomeThree';
 import FooterTwo from '@/layouts/footers/FooterTwo';
 import FeaturedFounders from './FeaturedFounders';
+import LegacySection from './HomeWhyChoose';
 
 export default function HomeShalimar() {
   return (
@@ -21,12 +22,13 @@ export default function HomeShalimar() {
       <HeaderOne style_2={true} />
       <Hero />
       <About />
-      <WhyChooseUs />
-      <FeaturedGoats />
+      {/* <WhyChooseUs /> */}
+      <LegacySection/>
+      {/* <FeaturedGoats /> */}
       <FeaturedFounders/>
       {/* <Gallery /> */}
       <VideoSection />
-      <CareGuideSection /> 
+      {/* <CareGuideSection />  */}
       <Faq />
       <TestimonialHomeThree />
       <FooterTwo />

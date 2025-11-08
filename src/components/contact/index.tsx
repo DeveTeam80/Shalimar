@@ -6,16 +6,17 @@ import FooterTwo from '@/layouts/footers/FooterTwo'
 import ContactHomeTwo from '../homes/home-3/CounterHomeThree'
 import GoogleMap from './GoogleMap'
 import ContactInfo from './ContactInfo'
+import HeaderOne from '@/layouts/headers/HeaderOne'
+import Breadcrumb from '../common/Breadcrumb'
 
 export default function Contact() {
   return (
     <>
-      <HeaderThree />
-      <Breadcrumnd title="Contact" subtitle="Contact" />
-      <ContactHomeTwo />
-      <GoogleMap />
-      <ContactInfo />
+      <HeaderOne style_2={true} />
+      <Breadcrumb title="Contact Us" subtitle="Contact Us" />
       <SubscribeHomeThree />
+      <ContactInfo />
+      <GoogleMap />
       <FooterTwo />
     </>
   )

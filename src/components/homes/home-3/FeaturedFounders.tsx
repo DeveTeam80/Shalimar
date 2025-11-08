@@ -14,7 +14,7 @@ export default function FeaturedFounders() {
                 data-wow-delay=".3s"
               >
                 <Image
-                  src="/assets/img/gallery/safdar.png"
+                  src="/assets/img/about/founders.png"
                   alt="About Shalimar Farms"
                   width={500}
                   height={500}
@@ -36,43 +36,24 @@ export default function FeaturedFounders() {
                   </h2>
                   <p className="wow fadeInUp" data-wow-delay=".4s">
                     Shalimar Farms was founded by Mr. Zaid and Mr. Safdar, two
-                    visionaries who share a deep passion for livestock breeding
-                    and animal welfare. Together, they have combined years of
-                    hands-on experience with a mission to redefine goat farming
-                    standards in India, built on principles of ethics,
-                    innovation, and sustainable growth.
+                    visionaries driven by a shared passion for ethical livestock
+                    breeding and animal welfare. With decades of combined
+                    experience, they set out to redefine goat farming in India
+                    through innovation, integrity, and sustainable practices.
+                  </p><br/>
+                  <p className="wow fadeInUp" data-wow-delay=".4s">
+                    Their leadership blends scientific breeding methods with
+                    traditional care, ensuring every animal thrives in a healthy
+                    and humane environment. From nutrition and herd management
+                    to health and genetics, their expertise touches every corner
+                    of the farm.
+                  </p><br/>
+                  <p className="wow fadeInUp" data-wow-delay=".4s">
+                    At Shalimar Farms, Zaid and Safdar uphold a simple promise,
+                    purity in bloodlines, transparency in process, and
+                    excellence in every outcome, building a legacy that
+                    continues to inspire breeders and farmers nationwide.
                   </p>
-                  <p className="wow fadeInUp" data-wow-delay=".5s">
-                    Their expertise covers every aspect of the farm, from
-                    scientific breeding and nutrition planning to herd
-                    management and animal health care. What sets them apart is
-                    their commitment to purity in bloodlines, transparency in
-                    process, and excellence in outcome.
-                  </p>
-                  <p className="wow fadeInUp" data-wow-delay=".6s">
-                    At Shalimar Farms, they don’t just raise goats, they
-                    preserve a legacy of strength, trust, and heritage that
-                    continues to inspire breeders and farmers across India.
-                  </p>
-                  <div className="testimonial-thumbv2">
-                    <div className="testimonial-count" data-wow-delay=".6s" style={{flexDirection: "column", bottom:"-173px"}}>
-                      <span>
-                      “Every goat we raise is a reflection of our promise, care
-                      in every step, strength in every breed, and honesty in
-                      every relationship.”
-                      </span>
-                      {/* <br /> */}
-                      <strong>
-                        — Zaid & Safdar,
-                        <br />
-                        Founders of Shalimar Farms
-                      </strong>
-                    </div>
-                  </div>
-                  {/* <Link href="/about" className="cmn-btn mt-4">
-                    Learn More
-                    <i className="fa-solid fa-arrow-right"></i>
-                  </Link> */}
                 </div>
               </div>
             </div>

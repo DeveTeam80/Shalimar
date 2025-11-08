@@ -6,19 +6,21 @@
 	border: 1px solid $p200-clr;
 	background: $white-clr;
 	padding: 30px;
+	height: 330px;
 
 	.icons {
-		width: 65px;
-		height: 65px;
+		// width: 165px;
+		// height: 165px;
+		color:#0a3d23;
 	}
 
 	.content {
-		border-left: 2px solid $p200-clr;
 		padding-left: 20px;
 		margin-left: 20px;
-
+		
 		.title {
-			font-size: 30px;
+			// border-bottom: 2px solid $p200-clr;
+			font-size: 25px;
 			line-height: 40px;
 			font-family: $heading-font;
 			color: $p900-clr;
@@ -70,10 +72,10 @@
 	@include breakpoint(max-xxl) {
 		padding: 20px;
 
-		.icons {
-			width: 50px;
-			height: 50px;
-		}
+		// .icons {
+		// 	width: 50px;
+		// 	height: 50px;
+		// }
 
 		.content {
 			padding-left: 15px;
@@ -116,10 +118,10 @@
 		padding: 20px;
 		display: grid;
 
-		.icons {
-			width: 50px;
-			height: 50px;
-		}
+		// .icons {
+		// 	width: 50px;
+		// 	height: 50px;
+		// }
 
 		.content {
 			padding-left: 0px;
@@ -493,7 +495,7 @@
 }
 
 .who-box {
-	background: $box-clr;
+	background: $p900-clr;
 	padding: 50px 15px;
 	text-align: center;
 	border-radius: 20px;
@@ -678,16 +680,16 @@
 	justify-content: space-between;
 	margin-bottom: 115px;
 
-	.section-title {
-		h2 {
-			color: $white-clr;
-		}
-	}
+	// .section-title {
+	// 	h2 {
+	// 		color: $white-clr;
+	// 	}
+	// }
 
 	.working-pra {
-		color: $white-clr;
+		// color: $white-clr;
 		max-width: 500px;
-		font-size: 16px;
+		font-size: 18px;
 	}
 
 	@include breakpoint(max-lg) {
@@ -898,7 +900,7 @@
 
 		.fast {
 			color: $white-clr;
-			font-size: 16px;
+			font-size: 18px;
 			font-weight: 400;
 			line-height: 30px;
 			font-family: $body-font;
@@ -1026,7 +1028,7 @@
 			.accordion-single {
 				.header-area {
 					.accordion-btn {
-						font-size: 16px;
+						font-size: 18px;
 						font-weight: 500;
 						line-height: 30px;
 						color: $p900-clr;
@@ -1058,7 +1060,7 @@
 
 		P {
 			color: $p800-clr;
-			font-size: 16px;
+			font-size: 18px;
 		}
 	}
 

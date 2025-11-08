@@ -236,7 +236,7 @@
 			font-family: $heading-font;
 		}
 		p {
-			font-size: 16px;
+			font-size: 18px;
 			font-weight: 400;
 			line-height: 30px;
 			color: $p800-clr;
@@ -350,7 +350,7 @@
 		opacity: 0;
 		transform: scale(60deg);
 		span {
-			font-size: 16px;
+			font-size: 18px;
 			font-weight: 400;
 			line-height: 30px;
 			display: block;
@@ -410,7 +410,7 @@
 		}
 		P {
 			color: $p800-clr;
-			font-size: 16px;
+			font-size: 18px;
 		}
 	}
 	@include breakpoint(max-xxl) {
@@ -475,7 +475,7 @@
 				color: $p900-clr;
 			}
 			.info {
-				font-size: 16px;
+				font-size: 18px;
 				font-weight: 400;
 				line-height: 30px;
 				color: $p800-clr;
@@ -540,7 +540,7 @@
 				padding: 5px 18px;
 				.aut {
 					width: 75px;
-					font-size: 16px;
+					font-size: 18px;
 					font-weight: 400;
 					line-height: 30px;
 				}
@@ -565,7 +565,7 @@
 			font-weight: 400;
 		}
 		p {
-			font-size: 16px;
+			font-size: 18px;
 			color: $p800-clr;
 		}
 	}
@@ -577,7 +577,7 @@
 			font-weight: 400;
 		}
 		p {
-			font-size: 16px;
+			font-size: 18px;
 			color: $p800-clr;
 		}
 	}
@@ -1675,7 +1675,7 @@ header a:not(.cmn-btn):not(.logo),
       }
       
       p {
-        font-size: 16px;
+        font-size: 18px;
       }
     }
   }
@@ -1722,7 +1722,7 @@ header a:not(.cmn-btn):not(.logo),
     
     .section-title {
       h5 {
-        font-size: 16px;
+        font-size: 18px;
       }
       
       h2 {
