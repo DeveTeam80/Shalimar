@@ -1,32 +1,38 @@
-"use client"
-import React, { useState } from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
-import useSticky from '@/hooks/use-sticky'
-import NavMenu from './menu/NavMenu'
-import Offcanvas from '@/components/common/Offcanvas'
+"use client";
+import React, { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import NavMenu from "./menu/NavMenu";
+import Offcanvas from "@/components/common/Offcanvas";
 
 type PropsType = {
-  style_2?: boolean
-}
+  style_2?: boolean;
+};
 
 export default function HeaderOne({ style_2 }: PropsType) {
-  const { sticky } = useSticky()
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
   return (
     <>
-      <header id="header-sticky" className={`header-1 ${sticky ? "sticky" : ""} ${style_2 ? "header-3" : ""}`}>
+      <header className={`header-1 ${style_2 ? "header-3" : ""}`}>
         <div className="container">
           <div className="mega-menu-wrapper">
             <div className="header-main">
+              {/* Left Section - Logo */}
               <div className="header-left">
                 <div className="logo">
                   <Link href="/" className="header-logo">
-                    <Image src="/assets/img/logo/logo.png" alt="logo-img" height={75} width={220} />
+                    <Image
+                      src="/assets/img/logo/logo.png"
+                      alt="logo-img"
+                      height={75}
+                      width={220}
+                    />
                   </Link>
                 </div>
               </div>
+
+              {/* Right Section - Navigation */}
               <div className="header-right d-flex justify-content-end align-items-center">
                 <div className="mean__menu-wrapper">
                   <div className="main-menu d-none d-xl-block">
@@ -35,8 +41,13 @@ export default function HeaderOne({ style_2 }: PropsType) {
                     </nav>
                   </div>
                 </div>
+
+                {/* Mobile Menu Toggle */}
                 <div className="header__hamburger d-xl-none my-auto">
-                  <div className="sidebar__toggle" onClick={() => setOpen(!open)}>
+                  <div
+                    className="sidebar__toggle"
+                    onClick={() => setOpen(!open)}
+                  >
                     <i className="fas fa-bars"></i>
                   </div>
                 </div>
@@ -45,7 +56,9 @@ export default function HeaderOne({ style_2 }: PropsType) {
           </div>
         </div>
       </header>
+
+      {/* Offcanvas Sidebar */}
       <Offcanvas open={open} setOpen={setOpen} />
     </>
-  )
+  );
 }

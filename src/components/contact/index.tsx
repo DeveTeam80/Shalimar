@@ -13,7 +13,7 @@ export default function Contact() {
   return (
     <>
       <HeaderOne style_2={true} />
-      <Breadcrumb title="Contact Us" subtitle="Contact Us" />
+      <Breadcrumb title="Get In Touch" subtitle="Contact Us" />
       <SubscribeHomeThree />
       <ContactInfo />
       <GoogleMap />
