@@ -43,7 +43,7 @@ export default function AboutSection() {
                         setup and management to marketing and sales strategies.
                       </li>
                       <li className="wow fadeInUp" data-wow-delay=".55s">
-                        <strong>Livestock Boarding (Ply System):</strong>{" "}
+                        <strong>Livestock Boarding (Pali System):</strong>{" "}
                         Offering complete boarding, lodging, nutrition, and care
                         management for goats under a structured and supervised
                         system.

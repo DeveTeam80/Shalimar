@@ -1,5 +1,7 @@
 "use client";
 import React from "react";
+import { GoGoal } from "react-icons/go";
+import { RiLightbulbFlashFill } from "react-icons/ri";
 
 export default function Mission() {
   return (
@@ -29,10 +31,7 @@ export default function Mission() {
               <div className="col-sm-6 wow fadeInDown" data-wow-delay=".4s">
                 <div className="who-box">
                   <div className="icon d-center">
-                    <img
-                      src="assets/img/icon/hand-planp900.svg"
-                      alt="mission icon"
-                    />
+                    <GoGoal size={45} color="#0a3d23" />
                   </div>
                   <h5 className="title white-clr">Our Vision</h5>
                   <p className="white-clr">
@@ -47,14 +46,11 @@ export default function Mission() {
               <div className="col-sm-6 wow fadeInDown" data-wow-delay=".6s">
                 <div className="who-box">
                   <div className="icon d-center">
-                    <img
-                      src="assets/img/icon/wheath-p900.svg"
-                      alt="vision icon"
-                    />
+                    <RiLightbulbFlashFill size={45} color="#0a3d23" />
                   </div>
                   <h5 className="title white-clr">Our Mission</h5>
                   <p className="white-clr">
-                    To build a sustainable ecosystem of premium goat farming —
+                    To build a sustainable ecosystem of premium goat farming,
                     not just selling goats, but inspiring passion, promoting
                     quality, and setting benchmarks of excellence in livestock
                     management.

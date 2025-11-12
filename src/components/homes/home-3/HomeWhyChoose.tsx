@@ -6,6 +6,8 @@ import {
   GiFamilyHouse,
   GiIndiaGate,
 } from "react-icons/gi";
+import { FaMedal } from "react-icons/fa";
+
 
 export default function LegacySection() {
   const legacyData = [
@@ -28,7 +30,7 @@ export default function LegacySection() {
       delay: ".7s",
     },
     {
-      icon: <GiFarmTractor size={50}  />,
+      icon: <FaMedal size={50}  />,
       title: "25+ Years of Expertise",
       desc: "Over two decades of excellence in goat farming, breeding, and livestock management, built on passion and integrity.",
       delay: ".9s",
