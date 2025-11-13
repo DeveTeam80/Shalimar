@@ -1,10 +1,16 @@
 // team section style
 .team-itemsv01 {
 	overflow: hidden;
-	border-radius: 10px;
+	border-radius: 0px 10px 10px 10px; // smoother all-around curve
+	border-top-left-radius: 40px; // emphasize top rounding
+	border-top-right-radius: 40px;
+	background: rgba(7, 67, 7, 0.75); 
 	transition: all 0.4s;
 	width: 100%;
 	position: relative;
+
+	// Add subtle shadow for depth
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 	.mimg {
 		width: 100%;
 	}
@@ -16,7 +22,7 @@
 		position: absolute;
 		bottom: 0;
 		left: 0;
-		width: 93%;
+		width: 100%;
 		z-index: 1;
 		.title {
 			font-size: 30px;

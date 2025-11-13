@@ -65,7 +65,7 @@ export default function FooterShalimar() {
             </div>
 
             {/* Our Goats */}
-            <div className="col-xl-2 col-lg-2 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".5s">
+            {/* <div className="col-xl-2 col-lg-2 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".5s">
               <div className="single-footer-widget">
                 <div className="widget-head">
                   <h3 className="white-clr">Our Goats</h3>
@@ -80,7 +80,6 @@ export default function FooterShalimar() {
               </div>
             </div>
 
-            {/* Care Resources - NEW */}
             <div className="col-xl-2 col-lg-2 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".6s">
               <div className="single-footer-widget">
                 <div className="widget-head">
@@ -94,7 +93,7 @@ export default function FooterShalimar() {
                   <li><Link href="/care-guide">View All Guides</Link></li>
                 </ul>
               </div>
-            </div>
+            </div> */}
 
             {/* Social Connect */}
             <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".7s">

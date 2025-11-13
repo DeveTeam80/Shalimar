@@ -22,7 +22,7 @@ export default function TeamHomeTwo() {
           <div className="row g-xl-4 g-3 justify-content-center">
             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
               <div className="team-itemsv01">
-                <img src="assets/img/testimonial/team1.png" alt="img" className="mimg" />
+                <img src="assets/img/about/IMG_7421-Photoroom.png" alt="img" className="mimg" />
                 <div className="contents">
                   <a href="#" className="title">Dianne Russell</a>
                   <span>Marketing Coordinator</span>
@@ -56,7 +56,7 @@ export default function TeamHomeTwo() {
             </div>
             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".5s">
               <div className="team-itemsv01">
-                <img src="assets/img/testimonial/team2.png" alt="img" className="mimg" />
+                <img src="assets/img/about/IMG_7422-Photoroom.png" alt="img" className="mimg" />
                 <div className="contents">
                   <a href="#" className="title">Devon Lane</a>
                   <span>Garden Lover</span>
